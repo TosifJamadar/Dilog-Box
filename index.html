@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog box</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 1100px;
+            margin:50px auto;
+            background-color: rgb(41, 211, 103);
+            
+        }
+        .icons{
+            height: 70px;
+            margin:20px auto;
+            margin-left: 120px;
+            position: relative;
+            top: 80px;
+        }
+        .sub_container{
+        margin-left: 890px;
+        position: relative;
+        bottom: 280px;
+        }
+        .icons1{
+            height: 70px;
+            padding: 30px;
+        }
+        .text{
+            text-align: center;
+            position: relative;
+            top: 70px;
+        }
+     .heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(2, 2, 32);
+    font-weight: 900;
+}
+.heading-sub{
+    font-weight: 500;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+}
+.modal{
+    background-color: #fff;
+    width: 300px;
+    height: 130px;
+    margin-top: 180px;
+}
+.yes{
+    border: 2px solid black;
+    border-radius: 8px;
+    position: relative;
+    left: 100px;
+    margin-left: 20px;
+    background-color: green;
+    color: white;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text">Dialog Box</h1>
+<img src="html-5.png" class="icons" onclick="html()"><br>
+<img src="css.png" alt="" class="icons"><br>
+<img src="js.png" alt="" class="icons">
+<div class="sub_container">
+    <img src="c++.png" alt="" class="icons1"><br>
+    <img src="c-.png" alt="" class="icons1"><br>
+    <img src="c.png" alt="" class="icons1"><br>
+</div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <span class="heading">with...</span><hr>
+             <p class="heading heading-sub" >Hello ,Welcome to Html5..</p><hr>
+             <button class="yes" onclick="end()">Ok</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
